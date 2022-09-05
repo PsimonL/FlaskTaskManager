@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!--% block head %}% endblock %} missing { -->
+    <!--https://jinja.palletsprojects.com/en/3.1.x/-->
+</head>
+<body>
+    <h1>Todo Application</h1>
+    <!--% block body %}% endblock %} missing {-->
+    <form action="">
+        <div>
+            <label for="tilte">Todo Tilte</label>
+            <input type="text" name="tilte" placeholder="Enter things to do..."><br>
+            <button type="submit">Add</button>
+        </div>
+    </form>
+   
+</body>
+</html>
