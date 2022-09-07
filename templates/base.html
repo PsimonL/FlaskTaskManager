@@ -20,14 +20,16 @@
         </div>
     </form>
    {% for todo in todo_list %}
-        <p>{{ todo.id }} | {{ todo.title }}</p>
+        <p>{{ todo.id }} | {{ todo.date.date() }} | {{ todo.title }} </p>
 
         {% if todo.complete == False %}
             <span>Not completed</span>
         {% else %}
-            <a href="/update/{{ todo.id }}">Update</a>
-            <a href="/delete/{{ todo.id }}">Delete</a>
+            <span>Complited</span>
         {% endif %}
+
+        <a href="/update/{{ todo.id }}">Update</a>
+        <a href="/delete/{{ todo.id }}">Delete</a>
    {% endfor %}
 </body>
 </html>
